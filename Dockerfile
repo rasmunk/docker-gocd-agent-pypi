@@ -10,3 +10,6 @@ RUN apt update && apt install -y \
     python3-pip \
     make \
     && rm -rf /var/lib/apt/lists/*;
+
+# use twine to publish the package
+RUN pip3 install twine
