@@ -1,4 +1,4 @@
-FROM gocd/gocd-agent-debian-10:v21.3.0
+FROM ucphhpc/gocd-agent-docker:latest
 
 LABEL MAINTAINER="Rasmus Munk <rasmus.munk@nbi.ku.dk>"
 
