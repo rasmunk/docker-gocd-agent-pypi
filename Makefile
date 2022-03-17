@@ -1,6 +1,5 @@
 OWNER=ucphhpc
 IMAGE=gocd-agent-pypi
-BUILD_TAG=edge
 # Enable that the builder should use buildkit
 # https://docs.docker.com/develop/develop-images/build_enhancements/
 DOCKER_BUILDKIT=1
@@ -19,10 +18,10 @@ build:
 	docker-compose build $(ARGS)
 
 clean:
-	docker rmi -f $(OWNER)/$(IMAGE):$(BUILD_TAG) $(ARGS)
+	docker rmi -f $(OWNER)/$(IMAGE):$(TAG) $(ARGS)
 
 push:
-	docker push ${OWNER}/${IMAGE}:${BUILD_TAG} $(ARGS)
+	docker push $(OWNER)/$(IMAGE):$(TAG) $(ARGS)
 
 test:
 # TODO, implement tests
