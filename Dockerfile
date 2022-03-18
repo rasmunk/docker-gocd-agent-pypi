@@ -11,5 +11,8 @@ RUN apt update && apt install -y \
     make \
     && rm -rf /var/lib/apt/lists/*;
 
-# use twine to publish the package
+# Use twine to publish the package
 RUN pip3 install twine
+
+# Update the PATH
+ENV PATH=$USER/.local/bin:$PATH
