@@ -15,4 +15,4 @@ RUN apt update && apt install -y \
 RUN pip3 install twine
 
 # Update the PATH
-ENV PATH=$USER/.local/bin:$PATH
+ENV PATH=/home/go/.local/bin:$PATH
