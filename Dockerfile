@@ -8,6 +8,7 @@ USER root
 RUN apt update && apt install -y \
     python3-dev \
     python3-pip \
+    python3-venv \
     make \
     && rm -rf /var/lib/apt/lists/*;
 
