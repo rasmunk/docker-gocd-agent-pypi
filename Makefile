@@ -21,7 +21,7 @@ endif
 endif
 
 dockerbuild:
-	docker build -t $(OWNER)/$(IMAGE):$(TAG) $(ARGS) .
+	docker-compose build ${ARGS}
 
 dockerclean:
 	docker rmi -f $(OWNER)/$(IMAGE):$(TAG)
