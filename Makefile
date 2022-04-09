@@ -37,8 +37,10 @@ clean:
 	rm -fr tests/__pycache__
 
 dist:
+### PLACEHOLDER ###
 
 distclean:
+### PLACEHOLDER ###
 
 maintainer-clean:
 	@echo 'This command is intended for maintainers to use; it'
@@ -46,12 +48,16 @@ maintainer-clean:
 	$(MAKE) distclean
 
 install-dep:
+### PLACEHOLDER ###
 
 install:
 	$(MAKE) install-dep
 
 uninstall:
+### PLACEHOLDER ###
 
 installcheck:
+### PLACEHOLDER ###
 
 check:
+### PLACEHOLDER ###
