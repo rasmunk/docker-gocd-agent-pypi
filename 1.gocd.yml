@@ -1,12 +1,12 @@
 environments:
-  gocd_images:
+  docker_image:
     environments:
       GIT_USER: "{{SECRET:[github][username]}}"
     pipelines:
       - gocd-agent-pypi
 pipelines:
   gocd-agent-pypi:
-    group: gocd_images
+    group: docker_image
     locking: off
     materials:
       gocd_agent_pypi_git:  # this is the name of material
