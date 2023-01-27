@@ -28,6 +28,7 @@ pipelines:
       ARGS: ''
       COMMIT_TAG: GO_REVISION_GOCD_AGENT_PYPI_GIT
       DEFAULT_TAG: latest
+      EXTRA_TAG: v22.3.0
       SRC_DIRECTORY: gocd-agent-pypi
       TEST_DIRECTORY: gocd-agent-pypi
       PUSH_DIRECTORY: publish-docker-scripts
