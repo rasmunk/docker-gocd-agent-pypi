@@ -1,4 +1,4 @@
-FROM ucphhpc/gocd-agent-docker:v23.2.0
+FROM ucphhpc/gocd-agent-docker:v23.3.0
 
 LABEL MAINTAINER="Rasmus Munk <rasmus.munk@nbi.ku.dk>"
 
