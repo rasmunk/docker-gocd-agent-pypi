@@ -9,7 +9,7 @@ TAG=edge
 ARGS=
 
 .PHONY: all init dockerbuild dockerclean dockerpush clean dist distclean maintainer-clean
-.PHONY: install uninstall installcheck check
+.PHONY: install uninstall installtest test
 
 all: init dockerbuild
 
@@ -56,11 +56,11 @@ install:
 uninstall:
 ### PLACEHOLDER ###
 
-uninstallcheck:
+uninstalltest:
 ### PLACEHOLDER ###
 
-installcheck:
+installtest:
 ### PLACEHOLDER ###
 
-check:
+test:
 ### PLACEHOLDER ###
