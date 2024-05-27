@@ -13,7 +13,7 @@ RUN apt update && apt install -y \
     && rm -rf /var/lib/apt/lists/*;
 
 # Use twine to publish the package
-RUN pip3 install twine
+RUN pip3 install twine --break-system-packages
 
 # Update the PATH
 ENV PATH=/home/go/.local/bin:$PATH
