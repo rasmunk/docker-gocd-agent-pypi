@@ -12,6 +12,12 @@ RUN apt update && apt install -y \
     make \
     && rm -rf /var/lib/apt/lists/*;
 
+WORKDIR /usr/bin
+# Ensure that python base links are present
+RUN ln -s python3 python
+
+WORKDIR /
+
 # Use twine to publish the package
 RUN pip3 install twine
 
