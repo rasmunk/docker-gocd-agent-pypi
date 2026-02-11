@@ -15,7 +15,7 @@ else
 endif
 $(echo ${DOCKER_COMPOSE} >/dev/null)
 TAG=edge
-ARGS=
+BUILD_ARGS=
 
 .PHONY: all
 all: init dockerbuild
@@ -30,7 +30,7 @@ endif
 
 .PHONY: dockerbuild
 dockerbuild:
-	${DOCKER_COMPOSE} build ${ARGS}
+	${DOCKER_COMPOSE} build ${BUILD_ARGS}
 
 .PHONY: dockerclean
 dockerclean:
