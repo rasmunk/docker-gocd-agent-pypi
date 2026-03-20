@@ -1,4 +1,4 @@
-FROM ucphhpc/gocd-agent-python:3.12
+FROM ucphhpc/gocd-agent-python:3.14
 
 LABEL MAINTAINER="Rasmus Munk <rasmus.munk@nbi.ku.dk>"
 
