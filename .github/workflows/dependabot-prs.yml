@@ -21,11 +21,12 @@ jobs:
           echo "NEW_VERSION=${NEW_VERSION}" >> $GITHUB_ENV
 
       - name: Increment Versions
-        if: ${CURRENT_VERSION} != ${NEW_VERSION}
         run: |
-          # Increment patch version
-          sed -i -e "s/${CURRENT_VERSION}/${NEW_VERSION}/g" 1.gocd.yml"
-
+          if [[ "${CURRENT_VERSION}" != "${NEW_VERSION}" ]]; then
+          {
+            # Increment patch version
+            sed -i -e "s/${CURRENT_VERSION}/${NEW_VERSION}/g" 1.gocd.yml
+          }
       - name: Commit and Push Changes
         run: |
           git add 1.gocd.yml
