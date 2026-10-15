@@ -26,7 +26,7 @@ jobs:
           {
             # Increment patch version
             sed -i -e "s/${CURRENT_VERSION}/${NEW_VERSION}/g" 1.gocd.yml
-          }
+          } fi;
       - name: Commit and Push Changes
         run: |
           git add 1.gocd.yml
